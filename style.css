@@ -71,10 +71,15 @@ body {
     margin-right: 1rem;
   }
   
+  /* Pied de page */
+
   footer {
-    background-color: #333;
+    background-color: #121242;
     color: white;
     text-align: center;
     padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
   }
   
