@@ -7,11 +7,10 @@
   }
 
   nav a.active {
-    color: aqua;
-    font-weight: bold;
+    color: white;
     text-decoration: underline;
   }
-  
+
   header .insta {
     width: 20px; 
     height: 20px; 
