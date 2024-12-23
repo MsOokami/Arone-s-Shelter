@@ -6,10 +6,9 @@ body {
   }
   
   header {
-    @keyframes mymove 
-      from {background-color: red;}
-      to {background-color: blue;}
-      padding: 5px; 
+    background-color: #121242;
+    color: white;
+    padding: 5px; 
   }
 
   nav ul {
