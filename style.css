@@ -17,7 +17,7 @@ body {
  /* Rectangle avec animation */
  .rectangle {
   position: relative;
-  margin: 50px auto;
+  margin: 0px auto;
   width: 100%;
   height: 300px;
   background-image: url('How\ to\ Dog/Yorkie.png'); /* Chemin vers l'imagae*/
@@ -38,6 +38,7 @@ body {
   animation: fadeIn 3s forwards;
  }
 
+ /* Liste */
   nav ul {
     list-style: none;
     padding: 0;
