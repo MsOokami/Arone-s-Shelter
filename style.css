@@ -6,13 +6,6 @@
     padding: 5px; 
   }
 
-  header .logo { 
-    width: 50px; 
-    height: 50px; 
-    margin: 10px;
-
-  }
-
   header .insta {
     width: 20px; 
     height: 20px; 
@@ -68,6 +61,13 @@
 }
 
  /* Styles global */
+ 
+ main .logo { 
+  width: 50px; 
+  height: 50px; 
+  margin: 10px;
+
+}
 
 body {
   font-family: Arial, sans-serif;
