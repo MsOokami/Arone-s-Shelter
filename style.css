@@ -69,12 +69,8 @@
   margin: 10px;
 
 }
-/*Section à propos */
-.àpropos {
-  padding: 20px;
-}
 
-/* Container du texte */
+/* Container du texte à propos */
 .logocontainer {
   display: flex;
   align-items: self-start; /* Aligne le logo et le texte */
