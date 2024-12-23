@@ -82,12 +82,14 @@
 
 /* Titre */
 .textcontainer h1 {
+  text-align: center;
   margin: 20px;
   font-size: larger;
 }
 
 /* Texte descriptif  */
 .textcontainer p {
+  text-align: center;
   margin-top: 10px;
   font-size: medium;
   line-height: 1.6;
