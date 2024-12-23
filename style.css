@@ -75,9 +75,10 @@
 }
 
 /* Container du texte */
-.textcontainer {
-  margin-top: 10px;
-  line-height: 1.6;
+.logocontainer {
+  display: flex;
+  align-items: self-start; /* Aligne le logo et le texte */
+  gap: 20px; /* Espacement entre logo et texte */
 }
 
 body {
