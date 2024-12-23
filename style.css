@@ -69,6 +69,16 @@
   margin: 10px;
 
 }
+/*Section à propos */
+.àpropos {
+  padding: 20px;
+}
+
+/* Container du texte */
+.textcontainer {
+  margin-top: 10px;
+  line-height: 1.6;
+}
 
 body {
   font-family: Arial, sans-serif;
