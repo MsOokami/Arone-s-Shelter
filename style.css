@@ -38,6 +38,11 @@ body {
   animation: fadeIn 3s forwards;
  }
 
+ /* Feuille de style */
+ h1{
+  color: darkblue;
+ }
+
  /* Liste */
   nav ul {
     list-style: none;
