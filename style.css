@@ -23,7 +23,7 @@ body {
   background-image: url('How\ to\ Dog/Yorkie.png'); /* Chemin vers l'imagae*/
   background-attachment: fixed; /* Effet parallaxe */
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: contain; /* Taille de l'image */
   display: flex;
   align-items: center;
