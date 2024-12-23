@@ -9,7 +9,7 @@
 
 @keyframes mymove {
   from {background-color: rgb(206, 154, 59);}
-  to {background-color: rgb(139, 6, 139);}
+  to {background-color: rgb(6, 30, 139);}
 }
 body {
     font-family: Arial, sans-serif;
