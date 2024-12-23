@@ -24,7 +24,7 @@ body {
   background-attachment: fixed; /* Effet parallaxe */
   background-position: center;
   background-repeat: repeat;
-  background-size: 20%; /* Taille de l'image */
+  background-size: 30%; /* Taille de l'image */
   display: flex;
   align-items: center;
   justify-content: center;
