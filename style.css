@@ -30,7 +30,7 @@
   color: white;
   text-align: center;
   border-radius: 10px;
-  animation: fadeIn 3s ease-in forwards; /* Animation d'apparition */
+  animation: fadein 3s ease-in forwards; /* Animation d'apparition */
  }
 
  .credit {
@@ -39,7 +39,7 @@
   right: 10px; /* Espacement de la droite */
   font-size: small;
   color: rgba(255, 255, 255, 0.7);
-  animation: fadeIn 3s ease-in 1s forwards; /* Animation avec délai */
+  animation: fadein 3s ease-in 1s forwards; /* Animation avec délai */
  }
 
  /* Définition de l'animation */
