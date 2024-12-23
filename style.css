@@ -1,4 +1,9 @@
 /* Styles de base */
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
