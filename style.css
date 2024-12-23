@@ -23,7 +23,7 @@
  }
 
  /* Texte apparaissant */
- .rectangle span {
+ .main-text {
   background-color: rgba(0, 0, 0, 0.5); /* Fond semi transparent du texte */
   padding: auto; /* Espace autour du texte*/
   font-size: 50px;
@@ -31,6 +31,14 @@
   text-align: center;
   border-radius: 10px;
   animation: fadeIn 3s forwards;
+ }
+
+ .credit {
+  position: absolute;
+  bottom: 10px; /* Espacement du bas*/
+  right: 10px; /* Espacement de la droite */
+  font-size: small;
+  color: rgba(255, 255, 255, 0.7);
  }
 
  /* Styles global */
