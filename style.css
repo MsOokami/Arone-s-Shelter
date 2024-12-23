@@ -12,6 +12,18 @@
     margin-left: 5px;
   }
 
+  header .insta {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 5px;
+  }
+
+  header .tiktok {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 5px;
+  }
+
  /* Rectangle avec animation */
  .rectangle {
   position: relative;
