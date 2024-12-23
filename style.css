@@ -23,8 +23,8 @@ body {
   background-image: url('img/logo.png'); /* Chemin vers l'imagae*/
   background-attachment: fixed; /* Effet parallaxe */
   background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 50%; /* Taille de l'image */
   display: flex;
   align-items: center;
   justify-content: center;
