@@ -23,11 +23,11 @@
  }
 
  /* Texte apparaissant */
- .parallax span {
+ .rectangle span {
   background-color: rgba(0, 0, 0, 0.5); /* Fond semi transparent du texte */
   padding: auto; /* Espace autour du texte*/
   font-size: 24px;
-  color: white;
+  color: black;
   text-align: center;
   opacity: 0;
   animation: fadeIn 3s forwards;
