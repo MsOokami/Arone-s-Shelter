@@ -10,12 +10,6 @@ body {
     padding: 0;
   }
   
-  header {
-    background-color: #121242;
-    color: white;
-    padding: 5px; 
-  }
-  
   nav ul {
     list-style: none;
     padding: 0;
