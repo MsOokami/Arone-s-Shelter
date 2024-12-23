@@ -24,7 +24,6 @@
 
  /* Texte apparaissant */
  .main-text {
-  background-color: rgba(0, 0, 0, 0.5); /* Fond semi transparent du texte */
   padding: auto; /* Espace autour du texte*/
   font-size: 50px;
   color: white;
