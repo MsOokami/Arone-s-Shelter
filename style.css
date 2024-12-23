@@ -20,7 +20,7 @@ body {
   margin: 0px auto;
   width: 100%;
   height: 300px;
-  background-image: url('img/logo.png'); /* Chemin vers l'imagae*/
+  background-image: url('How\ to\ Dog/Yorkie.png'); /* Chemin vers l'imagae*/
   background-attachment: fixed; /* Effet parallaxe */
   background-position: center;
   background-repeat: repeat;
