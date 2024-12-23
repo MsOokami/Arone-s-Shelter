@@ -67,7 +67,6 @@
   width: 500px; 
   height: 500px; 
   margin: 10px;
-
 }
 
 /* Container du texte à propos */
@@ -75,6 +74,23 @@
   display: flex;
   align-items: self-start; /* Aligne le logo et le texte */
   gap: 20px; /* Espacement entre logo et texte */
+}
+
+.textcontainer {
+  max-width: 600px;
+}
+
+/* Titre */
+.textcontainer h1 {
+  margin: 0;
+  font-size: large;
+}
+
+/* Texte descriptif  */
+.textcontainer p {
+  margin-top: 10px;
+  font-size: medium;
+  line-height: 1.6;
 }
 
 body {
