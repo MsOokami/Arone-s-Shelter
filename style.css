@@ -6,6 +6,12 @@
     padding: 5px; 
   }
 
+  nav a.active {
+    color: aqua;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
   header .insta {
     width: 20px; 
     height: 20px; 
