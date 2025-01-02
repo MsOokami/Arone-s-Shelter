@@ -18,6 +18,11 @@
     margin-left: 5px;
   }
 
+  header .don {
+    border-radius: 5px;
+    border-color: red;
+  }
+
  /* Rectangle avec animation */
  .rectangle {
   position: relative;
