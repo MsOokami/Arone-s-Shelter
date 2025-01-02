@@ -28,6 +28,11 @@
     opacity: 1; /* Rend le bouton visible */
     visibility: visible; /* Rend le bouton visible */
 }
+
+.scroll-to-top.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
   
   /* En tête*/
 
