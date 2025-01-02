@@ -27,6 +27,12 @@
     display: inline-block; /* Permet au padding et à la bordure de s'afficher correctement */
   }
 
+.don:hover{
+  background-color: red; /*Fond rouge*/
+  color: white; /* Texte blanc */
+  transition: background-color 0.3 ease; /*Transitiondouce */
+}
+
  /* Rectangle avec animation */
  .rectangle {
   position: relative;
