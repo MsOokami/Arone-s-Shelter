@@ -6,7 +6,7 @@
     right: 20px; /* Distance depuis la droite de l'écran */
     width: 40px; /* Largeur du bouton */
     height: 40px; /* Hauteur du bouton */
-    background-color: #ff0000; /* Couleur de fond */
+    background-color: #121242; /* Couleur de fond */
     color: white; /* Couleur de la flèche */
     text-align: center; /* Centre la flèche */
     line-height: 40px; /* Aligne verticalement la flèche */
@@ -21,7 +21,7 @@
 }
 
 .scroll-to-top:hover {
-    background-color: #cc0000; /* Change la couleur au survol */
+    background-color: #121242; /* Change la couleur au survol */
 }
 
 .scroll-to-top.show {
