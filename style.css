@@ -20,10 +20,9 @@
 
 .don {
     color: white;
-    border: 2px; /* Bordure */
+    border: 2px solid red; /* Bordure */
     border-radius: 5px; /* Coins arrondis */
-    border-color: red;
-    padding: 5px 10px; /* Ajout d'un léger espacement pour la bourdure */
+    padding: 5px; /* Ajout d'un léger espacement pour la bourdure */
     text-decoration: none;
     display: inline-block; /* Permet au padding et à la bordure de s'afficher correctement */
   }
