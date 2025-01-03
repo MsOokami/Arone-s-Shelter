@@ -9,10 +9,10 @@
     background-color: #121242; /* Couleur de fond */
     color: white; /* Couleur de la flèche */
     text-align: center; /* Centre la flèche */
-    line-height: 40px; /* Aligne verticalement la flèche */
+    line-height: 30px; /* Aligne verticalement la flèche */
     border-radius: 50%; /* Bouton circulaire */
     text-decoration: none; /* Supprime le soulignement */
-    font-size: 20px; /* Taille de la flèche */
+    font-size: 25px; /* Taille de la flèche */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
     transition: opacity 0.3s ease, background-color 0.3s ease; /* Transition douce */
     opacity: 0; /* Cache le bouton initialement */
