@@ -138,6 +138,7 @@
   text-align: center;
   margin: 20px;
   font-size: larger;
+  line-height: 1.6;
   background: linear-gradient(to right,darkblue, red);
   border-radius: 10px;
 }
@@ -172,8 +173,8 @@ button{
   text-transform: uppercase;
   border-radius: 5px;
   cursor: pointer;
-  animation: adoptionAnimation 3s linear infinite; /* Animation du dégradé */
-  transition: background-position 0.4s ease, transform 0.2s ease;
+  animation: adoptionAnimation 2s linear infinite; /* Animation du dégradé */
+  transition: background-position 0.4 ease, transform 0.2s ease;
 }
 
 .adoption-button:hover {
@@ -191,6 +192,29 @@ button{
   100% {
     background-position: 0 0;
   }
+}
+
+table{
+  width: 100%;
+  border-collapse: 10px;
+}
+
+tr {
+  text-align: center;
+  padding: 8px;
+  margin-top: 20px;
+  font-size: medium;
+  line-height: 1.6;
+  max-width: 600px;
+  background: linear-gradient(90deg, darkblue, red);
+  background-size: 100% 200%; /* Le fond est deux fois plus large que le bouton */
+  background-position: 0 0;
+  color: white;
+  cursor: pointer;
+}
+
+.tr:hover {
+  transform: scale(1.05); /* Agrandit légèrement le bouton */
 }
 
 body {
