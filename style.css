@@ -134,9 +134,12 @@
 
 /* Titre */
 .textcontainer h1 {
+  color: white;
   text-align: center;
   margin: 20px;
   font-size: larger;
+  background: linear-gradient(to right,darkblue, red);
+  border-radius: 10px;
 }
 
 /* Texte descriptif  */
@@ -145,6 +148,49 @@
   margin-top: 10px;
   font-size: medium;
   line-height: 1.6;
+}
+
+/* Adoption boutton */
+button{
+  text-align: center;
+  margin-top: 20px;
+  font-size: medium;
+  line-height: 1.6;
+  margin-left: 140px;
+  max-width: 600px;
+}
+
+.adoption-button {
+  background: linear-gradient(90deg, darkblue, red);
+  background-size: 200% 100%; /* Le fond est deux fois plus large que le bouton */
+  background-position: 0 0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: adoptionAnimation 3s linear infinite; /* Animation du dégradé */
+  transition: background-position 0.4s ease, transform 0.2s ease;
+}
+
+.adoption-button:hover {
+  background-position: 100% 0; /* Le dégradé se déplace vers la droite */
+  transform: scale(1.05); /* Agrandit légèrement le bouton */
+}
+
+@keyframes adoptionAnimation{
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 body {
