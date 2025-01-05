@@ -6,7 +6,7 @@
     right: 20px; /* Distance depuis la droite de l'écran */
     width: 40px; /* Largeur du bouton */
     height: 40px; /* Hauteur du bouton */
-    background-color: #121242; /* Couleur de fond */
+    background-color: #28435e; /* Couleur de fond */
     color: white; /* Couleur de la flèche */
     text-align: center; /* Centre la flèche */
     line-height: 30px; /* Aligne verticalement la flèche */
@@ -21,7 +21,7 @@
 }
 
 .scroll-to-top:hover {
-    background-color: #121242; /* Change la couleur au survol */
+    background-color: #28435e; /* Change la couleur au survol */
 }
 
 .scroll-to-top.show {
@@ -33,30 +33,36 @@
   opacity: 0;
   visibility: hidden;
 }
-  
+
+/* Conteneur centré sur 80% de la page*/
+.container {
+  font-family: 'Verdana, Geneva, Tahoma, sans-serif', cursive;
+  width: 80%; /* Largeur du site */
+  margin: 0 auto; /* Centrer horizontalement */
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi transparent pour lisibiilité */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre légère */
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
   /* En tête*/
 
   header {
-    background-color: #121242;
+    background-color: #28435e;
     color: white;
-    padding: 5px; 
-  }
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
-  header .insta {
-    width: 20px; 
-    height: 20px; 
-    margin-left: 5px;
-  }
-
-  header .tiktok {
-    width: 20px; 
-    height: 20px; 
-    margin-left: 5px;
-  }
+header p {
+  margin-left: 20px;
+}
 
 .don {
     color: white;
-    border: 2px solid red; /* Bordure */
+    border: 2px solid #bea200b9; /* Bordure */
     border-radius: 5px; /* Coins arrondis */
     padding: 5px; /* Ajout d'un léger espacement pour la bourdure */
     text-decoration: none;
@@ -64,7 +70,7 @@
   }
 
 .don:hover{
-  background-color: red; /*Fond rouge*/
+  background-color: #bea200b9; /*Fond doré*/
   color: white; /* Texte blanc */
   transition: background-color 0.3 ease; /*Transitiondouce */
 }
@@ -79,20 +85,19 @@
   background-attachment: fixed; /* Effet parallaxe */
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 100%; /* Taille de l'image */
+  background-size: 87%; /* Taille de l'image */
   display: flex;
   align-items: center; /* Aligne le contenu verticalement */
-  justify-content: center; /* Centre le contenu horizontalement */
- }
+}
 
  /* Texte apparaissant */
  .main-text {
   background-color: rgba(136, 136, 136, 0.5); /* Fond semi transparent du texte */
-  padding: auto; /* Espace autour du texte*/
-  font-size: 50px;
+  margin-left: 25px; /* Espace autour du texte*/
+  font-size: 30px;
   color: white;
-  text-align: center;
-  border-radius: 10px;
+  text-align: left;
+  border-radius: 5px;
   animation: fadein 3s ease-in forwards; /* Animation d'apparition */
  }
 
@@ -139,7 +144,7 @@
   margin: 20px;
   font-size: larger;
   line-height: 1.6;
-  background: linear-gradient(to right,darkblue, red);
+  background: linear-gradient(to right,darkblue, #bea200b9);
   border-radius: 10px;
 }
 
@@ -157,12 +162,12 @@ button{
   margin-top: 20px;
   font-size: medium;
   line-height: 1.6;
-  margin-left: 140px;
+  margin-left: 50px;
   max-width: 600px;
 }
 
 .adoption-button {
-  background: linear-gradient(90deg, darkblue, red);
+  background: linear-gradient(90deg, darkblue, #bea200b9);
   background-size: 200% 100%; /* Le fond est deux fois plus large que le bouton */
   background-position: 0 0;
   color: white;
@@ -206,7 +211,7 @@ tr {
   font-size: medium;
   line-height: 1.6;
   max-width: 600px;
-  background: linear-gradient(90deg, darkblue, red);
+  background: linear-gradient(90deg, darkblue, #bea200b9);
   background-size: 100% 200%; /* Le fond est deux fois plus large que le bouton */
   background-position: 0 0;
   color: white;
@@ -217,10 +222,17 @@ tr {
   transform: scale(1.05); /* Agrandit légèrement le bouton */
 }
 
+/* Appliquer un fond fixe */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color:#bba735b9;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100%; /* Taille de l'image */
 }
 
  /* Feuille de style */
@@ -261,10 +273,22 @@ body {
     margin-right: 1rem;
   }
   
+  .insta {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 5px;
+  }
+
+  .tiktok {
+    width: 20px;
+    height: 20px; 
+    margin-left: 5px;
+  }
+
   /* Pied de page */
 
   footer {
-    background-color: #121242;
+    background-color: #28435e;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -272,5 +296,11 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .top {
+    color: white;
   }
   
