@@ -60,20 +60,93 @@ header p {
   margin-left: 20px;
 }
 
-.aides {
-    color: white;
-    border: 2px solid #bea200b9; /* Bordure */
-    border-radius: 5px; /* Coins arrondis */
-    padding: 5px; /* Ajout d'un léger espacement pour la bourdure */
-    text-decoration: none;
-    display: inline-block; /* Permet au padding et à la bordure de s'afficher correctement */
-  }
+nav ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-.aides:hover{
-  background-color: #bea200b9; /*Fond doré*/
+nav ul.menu > li {
+  position: relative;
+}
+
+nav ul.menu > li > a,
+nav ul.menu > li > span {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  cursor: pointer;
+}
+
+nav ul.menu > li > span {
+  cursor: default;
+}
+
+nav ul.menu > li > a:hover,
+nav ul.menu > li > span:hover {
+  background-color: #bea200b9;
+  border-radius: 5px;
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: rgb(197, 72, 197);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0;
+  z-index: 100;
+  min-width: 200px;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #bb5d5d;
+}
+
+/* Afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Suppression du gras et espacement inchangé */
+nav ul.menu > li > a,
+nav ul.menu > li > span {
+  font-weight: normal;
+}
+
+/* Style spécifique pour la catégorie "Aides" */
+.aides > span {
+  color: white;
+  border: 2px solid #bea200b9; /* Bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 5px; /* Espacement pour la bordure */
+  text-decoration: none;
+  display: inline-block; /* Permet au padding et à la bordure de s'afficher correctement */
+}
+
+.aides:hover > span {
+  background-color: #bea200b9; /* Fond doré */
   color: white; /* Texte blanc */
-  transition: background-color 0.3 ease; /*Transitiondouce */
-  transform: scale(1.05); /* Agrandit légèrement le bouton */
+  transition: background-color 0.3s ease; /* Transition douce */
+  transform: scale(1.05); /* Agrandit légèrement le bouton*/
   animation: clignoter 1s infinite;
 }
 
@@ -82,7 +155,7 @@ header p {
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
@@ -129,6 +202,14 @@ header p {
 
  /* Styles global */
  
+ /* Paws */
+ .paws { 
+  width: 850px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
  .logo { 
   position: left;
   width: 500px; 

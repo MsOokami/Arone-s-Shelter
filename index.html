@@ -9,27 +9,50 @@
 
 <body>
   <div class="container">
-  <header>
-    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <header>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
         <div>
-         <p>Arone's Dog Shelter</p>
+          <p>Arone's Dog Shelter</p>
         </div>
         <nav>
-            <ul>
-                <li><a href="./index.html" class="active">Accueil</a></li>
-                <li><a href="./Adoption.html">Adoption</a></li>
-                <li><a href="./Signalements.html">Signalements</a></li>
-                <li><a href="./Apropos.html">À propos</a></li>
-                <li><a href="./Contact.html">Nous contacter</a></li>
-                <li><a href="./Aides.html" class="aides">Aides</a></li>
-            </ul>
+          <ul class="menu">
+            <li><a href="./index.html">Accueil</a></li>
+            <li class="dropdown">
+              <span>Adoptions</span>
+              <ul class="dropdown-menu">
+                <li><a href="./Catégorie1 - adoption/Chiens.html">Chiens</a></li>
+                <li><a href="./Catégorie1 - adoption/Chats.html">Chats</a></li>
+                <li><a href="./Catégorie1 - adoption/CommentAdopter.html">Comment adopter</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <span>Signalements</span>
+              <ul class="dropdown-menu">
+                <li><a href="./Catégorie2 - signalements/TrouverAnimal.html">J'ai trouvé un animal</a></li>
+                <li><a href="./Catégorie2 - signalements/PerduAnimal.html">J'ai perdu mon animal</a></li>
+              </ul>
+            </li>
+            <li><a href="./Apropos.html">À propos</a></li>
+            <li><a href="./Contact.html">Nous contacter</a></li>
+            <li class="dropdown aides">
+              <span>Aides</span>
+              <ul class="dropdown-menu">
+                <li><a href="./Catégorie3- aides/FaireDon.html">Je fais un don</a></li>
+                <li><a href="./Catégorie3- aides/DevenirParrain.html">Je deviens parrain</a></li>
+                <li><a href="./Catégorie3- aides/DevenirBenevole.html">Je deviens bénévole</a></li>
+                <li><a href="./Catégorie3- aides/FamilleAccueil.html">Je deviens famille d'accueil</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 <div class="rectangle">
   <span class="main-text">"I'll give them shelter, like you've done for me."</span>
   <span class="credit">Porter Robinson</span>
 </div>
+
+<img src="img/paws3.png" alt="paws" class="paws">
 
   <main>
     <section class="àpropos">
