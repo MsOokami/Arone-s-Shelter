@@ -60,7 +60,7 @@ header p {
   margin-left: 20px;
 }
 
-.don {
+.aides {
     color: white;
     border: 2px solid #bea200b9; /* Bordure */
     border-radius: 5px; /* Coins arrondis */
@@ -69,7 +69,7 @@ header p {
     display: inline-block; /* Permet au padding et à la bordure de s'afficher correctement */
   }
 
-.don:hover{
+.aides:hover{
   background-color: #bea200b9; /*Fond doré*/
   color: white; /* Texte blanc */
   transition: background-color 0.3 ease; /*Transitiondouce */
