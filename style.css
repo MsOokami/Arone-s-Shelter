@@ -73,6 +73,17 @@ header p {
   background-color: #bea200b9; /*Fond doré*/
   color: white; /* Texte blanc */
   transition: background-color 0.3 ease; /*Transitiondouce */
+  transform: scale(1.05); /* Agrandit légèrement le bouton */
+  animation: clignoter 1s infinite;
+}
+
+@keyframes clignoter {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
  /* Rectangle avec animation */
@@ -104,7 +115,7 @@ header p {
  .credit {
   position: absolute;
   bottom: 10px; /* Espacement du bas*/
-  right: 10px; /* Espacement de la droite */
+  left: 10px; /* Espacement de la droite */
   font-size: small;
   color: rgba(255, 255, 255, 0.527);
   animation: fadein 3s ease-in 1s forwards; /* Animation avec délai */
