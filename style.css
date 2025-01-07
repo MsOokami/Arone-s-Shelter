@@ -210,23 +210,33 @@ nav ul.menu > li > span {
   margin: 0 auto;
 }
 
+.àpropos {
+  background: linear-gradient(to right,#2f7694,#d0e5ee);
+  margin-top: 10px;
+}
+
  .logo { 
   position: left;
   width: 500px; 
   height: 500px; 
   margin: 10px;
+  border-radius: 50px;
 }
 
 /* Container du texte à propos */
 .logocontainer {
   display: flex;
-  align-items: self-start; /* Aligne le logo et le texte */
+  justify-content: left; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
   gap: 20px; /* Espacement entre logo et texte */
+  height: 75vh; /* Optionnel : pour centrer sur toute la hauteur de la page */
 }
 
+/* Texte à propos */
 .textcontainer {
-  margin-left: 50px;
-  max-width: 600px;
+  margin-left: 0; /* Supprime l'offset gauche */
+  max-width: 400px;
+  text-align: center;
 }
 
 /* Titre */
@@ -236,7 +246,8 @@ nav ul.menu > li > span {
   margin: 20px;
   font-size: larger;
   line-height: 1.6;
-  background: linear-gradient(to right,darkblue, #bea200b9);
+  border: 2px solid #13273b;
+  background: #395e83;
   border-radius: 10px;
 }
 
@@ -249,16 +260,9 @@ nav ul.menu > li > span {
 }
 
 /* Adoption boutton */
-button{
-  text-align: center;
-  margin-top: 20px;
-  font-size: medium;
-  line-height: 1.6;
-  margin-left: 50px;
-  max-width: 600px;
-}
-
 .adoption-button {
+  display: block; /* Fait du bouton un élément de bloc */
+  margin: 0 auto; /* Centre horizontalement */
   background: linear-gradient(90deg, darkblue, #bea200b9);
   background-size: 200% 100%; /* Le fond est deux fois plus large que le bouton */
   background-position: 0 0;
@@ -279,6 +283,7 @@ button{
   transform: scale(1.05); /* Agrandit légèrement le bouton */
 }
 
+
 @keyframes adoptionAnimation{
   0% {
     background-position: 0 0;
@@ -291,23 +296,30 @@ button{
   }
 }
 
-table{
-  width: 100%;
-  border-collapse: 10px;
+/* Grille d'images */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 colonnes */
+  gap: 20px; /* Espacement entre les images */
+  justify-items: center; /* Centre les images horizontalement */
+  margin: 20px auto;
+  max-width: 1000px; /* Largeur maximale de la grille */
 }
 
-tr {
-  text-align: center;
-  padding: 8px;
-  margin-top: 20px;
-  font-size: medium;
-  line-height: 1.6;
-  max-width: 600px;
-  background: linear-gradient(90deg, darkblue, #bea200b9);
-  background-size: 100% 200%; /* Le fond est deux fois plus large que le bouton */
-  background-position: 0 0;
-  color: white;
-  cursor: pointer;
+/* Images */
+.aronetest {
+  width: 100%; /* Images responsive */
+  max-width: 300px; /* Largeur max pour éviter qu'elles soient trop grandes */
+  height: auto; /* Garde les proportions */
+  border: 2px solid #bea200b9;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.aronetest:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .tr:hover {
