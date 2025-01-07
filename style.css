@@ -96,7 +96,7 @@ nav ul.menu > li > span:hover {
   position: absolute;
   top: 40px;
   left: 0;
-  background-color: rgb(197, 72, 197);
+  background-color: #839ba3;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -118,7 +118,7 @@ nav ul.menu > li > span:hover {
 }
 
 .dropdown-menu li a:hover {
-  background-color: #bb5d5d;
+  background-color: white;
 }
 
 /* Afficher le menu déroulant au survol */
