@@ -104,6 +104,8 @@ nav ul.menu > li > span:hover {
   padding: 10px 0;
   z-index: 100;
   min-width: 200px;
+  right: auto;
+  left: 0;
 }
 
 .dropdown-menu li {
@@ -356,7 +358,7 @@ body {
   }
   
   nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
   
@@ -376,35 +378,106 @@ body {
     max-width: 150px;
     margin-right: 1rem;
   }
+
+/* Pré-footer général */
+.pre-footer {
+  margin-bottom: 0; /* Supprime la marge externe */
+}
+
+/* Conteneur principal */
+.prefooter {
+  display: flex; /* Aligne les sections en ligne */
+  justify-content: space-between; /* Espace égal entre les sections */
+  flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+  gap: 20px; /* Espace entre les colonnes */
+  background-image: url('How\ to\ Dog/Yorkie.png'); /* Chemin vers l'imagae*/
+  border-radius: 50px;
+}
+
+/* Style des sections */
+.contact-info, .useful-links, .social-media {
+  flex: 1 1 30%; /* Chaque section prend environ 30% de largeur */
+  margin: 10px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: black;
+  list-style: none;
+}
+
+/* Style des listes */
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.useful-links ul li {
+  margin-bottom: 5px;
+}
+
+.useful-links ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.useful-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.twitter:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  cursor: pointer;
+}
+
+.insta:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  cursor: pointer;
+}
+
+.tiktok:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  cursor: pointer;
+}
+
+.twitter{
+  width: 25px; 
+  height: 25px; 
+  margin-left: 5px;
+  transition: transform 0.2s; /* Effet au survol */
+}
+
+.insta {
+  width: 20px; 
+  height: 20px; 
+  margin-left: 5px;
+  transition: transform 0.2s; /* Effet au survol */
+}
+
+.tiktok {
+  width: 20px;
+  height: 20px; 
+  margin-left: 5px;
+  transition: transform 0.2s; /* Effet au survol */
+}
   
-  .insta {
-    width: 20px; 
-    height: 20px; 
-    margin-left: 5px;
-  }
-
-  .tiktok {
-    width: 20px;
-    height: 20px; 
-    margin-left: 5px;
-  }
-
-  /* Pied de page */
-
-  footer {
-    background-color: #28435e;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: small;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
+/* Pied de page */
+footer {
+  background-color: #28435e;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: small;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 0; /* Supprime la marge externe */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
   .top {
-    color: white;
+    color: blue;
   }
-  
