@@ -419,6 +419,11 @@ section {
   align-items: center; /* Centrage du contenu à l'intérieur de la colonne */
 }
 
+.column:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  }
+
 /* Séparateur entre les colonnes */
 .prefooter .column:not(:last-child)::after {
   color: var(--primary-color);
