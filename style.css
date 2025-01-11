@@ -341,30 +341,25 @@ body {
   background-size: 100%; /* Taille de l'image */
 }
 
- /* Feuille de style */
- h1{
-  color: darkblue;
- }
-
  /* Liste */
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 2rem;
-  }
+ nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
 
   .animal {
     border: 1px solid #ddd;
@@ -427,6 +422,23 @@ h3 {
   text-decoration: underline;
 }
 
+.social-media p {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.social-media p:hover {
+  text-decoration: underline;
+}
+
+.fb:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  cursor: pointer;
+}
+
 .twitter:hover {
   transform: scale(1.1); /* Zoom au survol */
   cursor: pointer;
@@ -440,6 +452,13 @@ h3 {
 .tiktok:hover {
   transform: scale(1.1); /* Zoom au survol */
   cursor: pointer;
+}
+
+.facebook {
+  width: 25px; 
+  height: 20px; 
+  margin-left: 5px;
+  transition: transform 0.2s; /* Effet au survol */
 }
 
 .twitter{
@@ -479,5 +498,5 @@ footer {
 }
 
   .top {
-    color: blue;
+    color: white;
   }
