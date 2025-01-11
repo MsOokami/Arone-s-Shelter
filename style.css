@@ -6,8 +6,8 @@
     right: 20px; /* Distance depuis la droite de l'écran */
     width: 40px; /* Largeur du bouton */
     height: 40px; /* Hauteur du bouton */
-    background-color: #28435e; /* Couleur de fond */
-    color: white; /* Couleur de la flèche */
+    background-color: var(--primary-color); /* Couleur de fond */
+    color: var(--light-color); /* Couleur de la flèche */
     text-align: center; /* Centre la flèche */
     line-height: 30px; /* Aligne verticalement la flèche */
     border-radius: 50%; /* Bouton circulaire */
@@ -21,7 +21,7 @@
 }
 
 .scroll-to-top:hover {
-    background-color: #28435e; /* Change la couleur au survol */
+    background-color: var(--primary-color); /* Change la couleur au survol */
 }
 
 .scroll-to-top.show {
@@ -49,8 +49,8 @@
   /* En tête*/
 
   header {
-    background-color: #28435e;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     padding: 5px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -74,7 +74,7 @@ nav ul.menu > li {
 nav ul.menu > li > a,
 nav ul.menu > li > span {
   text-decoration: none;
-  color: white;
+  color: var(--light-color);
   padding: 10px 15px;
   display: block;
   cursor: pointer;
@@ -86,7 +86,7 @@ nav ul.menu > li > span {
 
 nav ul.menu > li > a:hover,
 nav ul.menu > li > span:hover {
-  background-color: #bea200b9;
+  background-color: var(--secondary-color);
   border-radius: 5px;
 }
 
@@ -96,7 +96,7 @@ nav ul.menu > li > span:hover {
   position: absolute;
   top: 40px;
   left: 0;
-  background-color: #839ba3;
+  background-color: var(--hover-color);
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -120,7 +120,7 @@ nav ul.menu > li > span:hover {
 }
 
 .dropdown-menu li a:hover {
-  background-color: white;
+  background-color: var(--light-color);
 }
 
 /* Afficher le menu déroulant au survol */
@@ -137,7 +137,7 @@ nav ul.menu > li > span {
 /* Style spécifique pour la catégorie "Aides" */
 .aides > span {
   color: white;
-  border: 2px solid #bea200b9; /* Bordure */
+  border: 2px solid var(--secondary-color); /* Bordure */
   border-radius: 5px; /* Coins arrondis */
   padding: 5px; /* Espacement pour la bordure */
   text-decoration: none;
@@ -145,7 +145,7 @@ nav ul.menu > li > span {
 }
 
 .aides:hover > span {
-  background-color: #bea200b9; /* Fond doré */
+  background-color: var(--secondary-color); /* Fond doré */
   color: white; /* Texte blanc */
   transition: background-color 0.3s ease; /* Transition douce */
   transform: scale(1.05); /* Agrandit légèrement le bouton*/
@@ -203,6 +203,12 @@ nav ul.menu > li > span {
 }
 
  /* Styles global */
+ :root {
+  --primary-color: #28435e;
+  --secondary-color: #bea200b9;
+  --hover-color: #839ba3;
+  --light-color: #ffffff;
+}
  
  /* Paws */
  .paws { 
@@ -263,6 +269,7 @@ nav ul.menu > li > span {
 
 /* Adoption boutton */
 .adoption-button {
+  will-change: transform, background-position;  
   display: block; /* Fait du bouton un élément de bloc */
   margin: 0 auto; /* Centre horizontalement */
   background: linear-gradient(90deg, darkblue, #bea200b9);
@@ -313,7 +320,7 @@ nav ul.menu > li > span {
   width: 100%; /* Images responsive */
   max-width: 300px; /* Largeur max pour éviter qu'elles soient trop grandes */
   height: auto; /* Garde les proportions */
-  border: 2px solid #bea200b9;
+  border: 2px solid var(--secondary-color);
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -376,38 +383,72 @@ section {
 
 /* Pré-footer général */
 .pre-footer {
-  margin-bottom: 0; /* Supprime la marge externe */
+  display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les éléments verticalement */
+    text-align: center; /* Centre le texte dans les éléments enfants */
+    margin: 0; /* Enlève toute marge superflue */
+    padding: 0; /* Enlève le padding éventuel */
+    background-image: url('How\ to\ Dog/Yorkie.png'); /* Chemin vers l'image*/
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Conteneur principal */
 .prefooter {
-  display: flex; /* Aligne les sections en ligne */
-  justify-content: space-between; /* Espace égal entre les sections */
-  flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
-  background-image: url('How\ to\ Dog/Yorkie.png'); /* Chemin vers l'imagae*/
-  border-radius: 50px;
+  text-align: center;
+  display: flex; /* Organisation des colonnes en ligne */
+  justify-content: center; /* Centrer les colonnes horizontalement */
+  align-items: stretch; /* Étendre les colonnes à la même hauteur */
+  gap: 20px; /* Espacement entre les colonnes */
+}
+
+/* Style commun des colonnes */
+.column {
+  flex: 1; /* Chaque colonne prend une part égale de l'espace */
+  flex-direction: column;
+  min-width: auto; /* Largeur minimale pour éviter des colonnes trop étroites */
+  background-color: #ffffff; /* Fond blanc */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre légère */
+  padding: 15px; /* Espacement interne */
+  text-align: center; /* Centre le contenu */
+  justify-content: center; /* Centrage du texte verticalement */
+  align-items: center; /* Centrage du contenu à l'intérieur de la colonne */
+}
+
+/* Séparateur entre les colonnes */
+.prefooter .column:not(:last-child)::after {
+  color: var(--primary-color);
+  font-size: 30px;
 }
 
 /* Style des sections */
 .contact-info, .useful-links, .social-media {
   flex: 1 1 30%; /* Chaque section prend environ 30% de largeur */
-  margin: 10px;
   text-align: center;
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
 }
 
-h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: black;
-  list-style: none;
+/* Titres des colonnes */
+.column h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #28435e;
+  text-transform: uppercase;
+  border-bottom: 2px solid #bea200b9;
+  padding-bottom: 5px;
 }
 
 /* Style des listes */
 .useful-links ul {
   list-style: none;
   padding: 0;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
 }
 
 .useful-links ul li {
@@ -421,6 +462,21 @@ h3 {
 
 .useful-links ul li a:hover {
   text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  text-align: center; /* Centre le texte dans les éléments enfants */
+}
+
+.social-media a {
+  display: inline-flex; /* Aligne logo et texte horizontalement */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto; /* Centre le lien dans son conteneur */
 }
 
 .social-media p {
@@ -439,36 +495,18 @@ h3 {
   width: 25px; 
   height: 20px; 
   margin-left: 5px;
-  transition: transform 0.2s; /* Effet au survol */
-}
-
-.fb:hover {
-  transform: scale(1.1); /* Zoom au survol */
-  cursor: pointer;
 }
 
 .twitter{
   width: 25px; 
   height: 25px; 
   margin-left: 5px;
-  transition: transform 0.2s; /* Effet au survol */
-}
-
-.twitter:hover {
-  transform: scale(1.1); /* Zoom au survol */
-  cursor: pointer;
 }
 
 .insta {
   width: 20px; 
   height: 20px; 
   margin-left: 5px;
-  transition: transform 0.2s; /* Effet au survol */
-}
-
-.insta:hover {
-  transform: scale(1.1); /* Zoom au survol */
-  cursor: pointer;
 }
 
 .tiktok {
@@ -478,14 +516,19 @@ h3 {
   transition: transform 0.2s; /* Effet au survol */
 }
 
-.tiktok:hover {
-  transform: scale(1.1); /* Zoom au survol */
+.facebook, .twitter, .insta, .tiktok {
+  transition: transform 0.2s;
+}
+
+.facebook:hover, .twitter:hover, .insta:hover, .tiktok:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
+
   
 /* Pied de page */
 footer {
-  background-color: #28435e;
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 1rem 0;
