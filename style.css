@@ -384,7 +384,6 @@ section {
   display: flex; /* Aligne les sections en ligne */
   justify-content: space-between; /* Espace égal entre les sections */
   flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
-  gap: 20px; /* Espace entre les colonnes */
   background-image: url('How\ to\ Dog/Yorkie.png'); /* Chemin vers l'imagae*/
   border-radius: 50px;
 }
@@ -394,6 +393,8 @@ section {
   flex: 1 1 30%; /* Chaque section prend environ 30% de largeur */
   margin: 10px;
   text-align: center;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
 }
 
 h3 {
@@ -434,31 +435,16 @@ h3 {
   text-decoration: underline;
 }
 
-.fb:hover {
-  transform: scale(1.1); /* Zoom au survol */
-  cursor: pointer;
-}
-
-.twitter:hover {
-  transform: scale(1.1); /* Zoom au survol */
-  cursor: pointer;
-}
-
-.insta:hover {
-  transform: scale(1.1); /* Zoom au survol */
-  cursor: pointer;
-}
-
-.tiktok:hover {
-  transform: scale(1.1); /* Zoom au survol */
-  cursor: pointer;
-}
-
 .facebook {
   width: 25px; 
   height: 20px; 
   margin-left: 5px;
   transition: transform 0.2s; /* Effet au survol */
+}
+
+.fb:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  cursor: pointer;
 }
 
 .twitter{
@@ -468,6 +454,11 @@ h3 {
   transition: transform 0.2s; /* Effet au survol */
 }
 
+.twitter:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  cursor: pointer;
+}
+
 .insta {
   width: 20px; 
   height: 20px; 
@@ -475,11 +466,21 @@ h3 {
   transition: transform 0.2s; /* Effet au survol */
 }
 
+.insta:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  cursor: pointer;
+}
+
 .tiktok {
   width: 20px;
   height: 20px; 
   margin-left: 5px;
   transition: transform 0.2s; /* Effet au survol */
+}
+
+.tiktok:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  cursor: pointer;
 }
   
 /* Pied de page */
