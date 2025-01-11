@@ -417,6 +417,7 @@ section {
   text-align: center; /* Centre le contenu */
   justify-content: center; /* Centrage du texte verticalement */
   align-items: center; /* Centrage du contenu à l'intérieur de la colonne */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .column:hover{
