@@ -224,7 +224,7 @@ nav ul.menu > li > span {
 }
 
  .logo { 
-  position: left;
+  position: center;
   width: 500px; 
   height: 500px; 
   margin: 10px;
@@ -234,9 +234,9 @@ nav ul.menu > li > span {
 /* Container du texte à propos */
 .logocontainer {
   display: flex;
-  justify-content: left; /* Centre horizontalement */
+  justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
-  gap: 20px; /* Espacement entre logo et texte */
+  gap: 50px; /* Espacement entre logo et texte */
   height: 75vh; /* Optionnel : pour centrer sur toute la hauteur de la page */
 }
 
